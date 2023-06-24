@@ -6,12 +6,21 @@ import { useState, useEffect } from 'react'
 
 function App() {
   const [data, setData] = useState([])
-  const [URL, setURL] = useState("https://645520dbf803f345763b3578.mockapi.io/Crud-appointment");
+  const [URL, setURL] = useState("");
   function getData() {
     axios.get(URL)
       .then((res) => {
         //console.log(res.data);
+        if(URL != "")
+        {
         setData(res.data)
+      } else {
+        setData([
+          {
+            "message": "API/Data not found!"
+          }
+        ])
+      }
 
       }).catch((err) => {
         setData(err);
