@@ -5,9 +5,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Screenshots
 
-<img src="./screenshots/ss1.png">
+<img src="screenshots/ss1.png">
 <br><br>
-<img src="./screenshots/ss2.png">
+<img src="screenshots/ss2.png">
 
 ## Available Scripts
 
